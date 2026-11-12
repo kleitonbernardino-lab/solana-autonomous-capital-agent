@@ -1,0 +1,30 @@
+{
+  "name": "@kleitonbernardino/solana-autonomous-capital-agent",
+  "version": "1.0.0",
+  "description": "Production-grade autonomous capital agent on Solana featuring programmable guardrails, MultiHopper routing, and OOBE SAP MCP integration.",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/tests/agent.test.js",
+    "start": "node dist/src/index.js",
+    "simulate": "node dist/src/index.js --simulate",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "solana",
+    "autonomous-agent",
+    "oobe-protocol",
+    "steve-capital",
+    "multihopper",
+    "ace-data-cloud",
+    "defi",
+    "mcp"
+  ],
+  "author": "Kleiton Bernardino <kleiton.bernardino@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.4.0"
+  }
+}
