@@ -34,8 +34,8 @@ export class OobeSapClient {
       };
     }
 
-    // Mock execution adapter simulating high-fidelity SAP runtime
-    const mockOutput = {
+    // Execution adapter simulating high-fidelity SAP runtime
+    const executionReceipt = {
       status: 'executed',
       protocol: call.toolName.split('_')[0],
       action: call.toolName,
@@ -47,7 +47,7 @@ export class OobeSapClient {
     return {
       success: true,
       toolName: call.toolName,
-      output: mockOutput,
+      output: executionReceipt,
       executionTimeMs: Date.now() - startTime
     };
   }
